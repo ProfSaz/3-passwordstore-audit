@@ -26,10 +26,10 @@ header-includes:
 
 # PasswordStore Audit Report
 
-Prepared by: YOUR_NAME_HERE
+Prepared by: Prof Saz
 Lead Auditors: 
 
-- [YOUR_NAME_HERE](enter your URL here)
+- [Prof Saz](enter your URL here)
 
 Assisting Auditors:
 
@@ -67,13 +67,13 @@ Assisting Auditors:
 </details>
 </br>
 
-# About YOUR_NAME_HERE
+# About Prof Saz
 
 <!-- Tell people about you! -->
 
 # Disclaimer
 
-The YOUR_NAME_HERE team makes all effort to find as many vulnerabilities in the code in the given time period, but holds no responsibilities for the the findings provided in this document. A security audit by the team is not an endorsement of the underlying business or product. The audit was time-boxed and the review of the code was solely on the security aspects of the solidity implementation of the contracts.
+The Prof Saz team makes all effort to find as many vulnerabilities in the code in the given time period, but holds no responsibilities for the the findings provided in this document. A security audit by the team is not an endorsement of the underlying business or product. The audit was time-boxed and the review of the code was solely on the security aspects of the solidity implementation of the contracts.
 
 # Risk Classification
 
@@ -125,7 +125,7 @@ For this contract, only the owner should be able to interact with the contract.
 
 ## High 
 
-### [H-1] Passwords stored on-chain are visable to anyone, not matter solidity variable visibility
+### [H-1] Passwords stored on-chain are visable to anyone, no matter the solidity variable visibility
 
 **Description:** All data stored on-chain is visible to anyone, and can be read directly from the blockchain. The `PasswordStore::s_password` variable is intended to be a private variable, and only accessed through the `PasswordStore::getPassword` function, which is intended to be only called by the owner of the contract. 
 
