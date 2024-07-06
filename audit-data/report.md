@@ -1,7 +1,7 @@
 ---
 title: PasswordStore Audit Report
-author: YOUR_NAME_HERE
-date: September 1, 2023
+author: Prof Saz
+date: July 5, 2024
 header-includes:
   - \usepackage{titling}
   - \usepackage{graphicx}
